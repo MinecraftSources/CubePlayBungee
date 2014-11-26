@@ -1,0 +1,21 @@
+enable:
+    - find
+    - list
+    - message
+    - slap
+    - serverlist
+    - dispatch
+    - reply
+format:
+    alert: '&8[&a+&8] &7{ALERT}'
+    find: '&e{PLAYER} &ais playing on &e{SERVER}'
+    message: '&a({SERVER}) &7[{SENDER} » {RECIPIENT}] &f{MESSAGE}'
+    send: '&aSending &e{PLAYER} &ato server &e{SERVER}'
+settings:
+    glist:
+        header: '&aServers:'
+        body: '&a- {SERVER} {DENSITY}'
+errors:
+    invalid: '&cInvalid arguments provided.'
+    offline: '&cSorry, that player is offline.'
+    slap: '&cYou are unworthy of slapping people.'
