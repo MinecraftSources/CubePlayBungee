@@ -30,7 +30,7 @@ public class BungeeEssentials extends Plugin {
             this.saveConfig();
             config = this.loadConfig();
         } catch (Exception var7) {
-            this.getLogger().log(Level.SEVERE, "Exception thrown whilst loading config, unable to proceed: ", var7);
+            this.getLogger().log(Level.SEVERE, "Error cargando la Configuración: ", var7);
         }
 
         if(config != null) {
@@ -53,7 +53,7 @@ public class BungeeEssentials extends Plugin {
                     if(nope.contains(registering.getName())) {
                         this.getProxy().getPluginManager().registerCommand(this, registering.getCommand());
                     } else {
-                        this.getLogger().info("Skipping registration of command \"" + registering.getName() + "\" as specified by the config.");
+                        this.getLogger().info("Saltando el Registro del comando \"" + registering.getName() + "\" como se ha especificado en la Configuración.");
                     }
                 } else {
                     this.getProxy().getPluginManager().registerCommand(this, registering.getCommand());
