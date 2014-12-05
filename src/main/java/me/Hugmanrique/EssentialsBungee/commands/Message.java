@@ -13,7 +13,7 @@ package me.Hugmanrique.EssentialsBungee.commands;
 public class Message extends Command {
 
     public Message() {
-        super("mensaje", "", new String[]{"mensaje", "msg", "t", "tell", "decir", "t"});
+        super("mensaje", "", new String[]{"mensaje", "msg", "t", "tell", "decir"});
     }
 
     public void execute(CommandSender sender, String[] args) {
