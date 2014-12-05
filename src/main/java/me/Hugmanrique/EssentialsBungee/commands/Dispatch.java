@@ -34,7 +34,7 @@ public class Dispatch extends Command {
             try {
                 stream.writeUTF(send);
             } catch (IOException var10) {
-                BungeeEssentials.me.getLogger().severe("Unable to write command to stream");
+                BungeeEssentials.me.getLogger().severe("Error al escribir los datos");
                 return;
             }
 
@@ -42,7 +42,7 @@ public class Dispatch extends Command {
             out.writeShort(bytes.length);
             out.write(bytes);
             bytes = out.toByteArray();
-            BungeeEssentials.me.getLogger().info("Sent command via Dispatch channel");
+            BungeeEssentials.me.getLogger().info("Comando mandado por el canal de Dispatch");
             Iterator i$ = BungeeEssentials.me.getProxy().getServers().values().iterator();
 
             while(i$.hasNext()) {
